@@ -1,0 +1,207 @@
+@media screen and (max-width: 1025px){
+    .intro__menu {
+        padding-left: 0;
+    }
+    .intro__menu a {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 958px) {
+
+}
+
+@media screen and (max-width: 769px) {
+    .intro {
+        background-position: -190px 50%;
+        height: 950px;
+    }
+    .intro__header {
+        padding: 0;
+        display: block;
+        position: relative;
+    }
+    .intro__menu {
+        display: flex;
+        justify-content: space-between;
+        width: 76.82%;
+        margin: 0 auto;
+        padding: 30px 0 0;
+    }
+    .intro__menu a {
+        padding-right: 0;
+    }
+    .intro__menu a:last-child {
+        position: absolute;
+        top: 44px;
+        right: 15px;
+        margin-left: 0;
+    }
+    .rect-4 {
+        top: -50px;
+    }
+    .rect-3 {
+        top: -50px;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 6.4em;
+        line-height: 68px;
+        padding-top: 198px;
+    }
+
+}
+
+@media screen and (max-width: 706px) {
+    .advice {
+        position: relative;
+        max-width: 290px;
+        margin: 0 auto 30%;
+    }
+}
+
+@media screen and (max-width: 521px) {
+
+}
+
+@media screen and (max-width: 426px) {
+    .intro {
+        background-position: 18% 50%;
+    }
+    .logo img {
+        z-index: 20;
+    }
+    .rect-2 {
+        bottom: 115px;
+    }
+    .rect-3 {
+        top: -40px;
+        right: 108px;
+    }
+    .rect-4 {
+        top: -50px;
+        right: 98px;
+    }
+    .burger-menu {
+        position: absolute;
+        width: 40px;
+        height: 26px;
+        top: 40px;
+        right: 20px;
+    }
+    .burger-menu span, .burger-menu:after, .burger-menu:before {
+        position: absolute;
+        display: block;
+        height: 3px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    .burger-menu span {
+        top: 43%;
+    }
+    .burger-menu:after, .burger-menu:before {
+        content: '';
+    }
+    .burger-menu:after {
+        bottom: 0;
+    }
+    .burger-menu:before {
+        top: 0;
+    }
+    .burger-menu.open-menu span {
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .burger-menu.open-menu:before {
+        transform: rotate(38deg);
+        top: 12px;
+        transition: 0.4s;
+    }
+    .burger-menu.open-menu:after {
+        transform: rotate(-38deg);
+        bottom: 12px;
+        transition: 0.4s;
+    }
+    .intro__menu {
+        position: relative;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: auto;
+        right: -100%;
+        transition: all 0.4s ease;
+        justify-content: space-between;
+    }
+    .intro__menu.open-menu {
+        right: 0;
+    }
+    .intro__menu a {
+        padding-bottom: 15px;
+    }
+    .intro__menu a:nth-child(1), .intro__menu a:nth-child(3), .intro__menu a:nth-child(5){
+        padding-right: 60px;
+    }
+    .intro__menu a:nth-child(2), .intro__menu a:nth-child(4) {
+        padding-left: 60px;
+    }
+    .intro__menu a:last-child {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .title {
+        padding: 20px 15px 0;
+    }
+    .subtitle {
+        padding: 24px 15px 35px;
+    }
+    .advice {
+        margin: 0 auto 228px;
+    }
+    .header__arrow {
+        left: 46%;
+        padding-bottom: 60px;
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 376px) {
+    .rect-3, .rect-4 {
+        opacity: 0;
+    }
+    .intro__menu a {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .intro__menu a:nth-child(1), .intro__menu a:nth-child(3), .intro__menu a:nth-child(5){
+        padding-right: 20px;
+    }
+    .intro__menu {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .intro__menu a:nth-child(1), .intro__menu a:nth-child(3), .intro__menu a:nth-child(5){
+        padding-right: 5px;
+    }
+    .intro__menu a {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .intro__menu {
+        padding: 0;
+    }
+    .rect-2 {
+        bottom: 90px;
+    }
+}
