@@ -28,7 +28,16 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 4,
         infinite: false,
-        initialSlide: 0        
+        initialSlide: 0,
+        responsive: [
+            {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2                
+            }
+        }
+    ]       
     });
 });
 
@@ -39,7 +48,16 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: false,
-        initialSlide: 0        
+        initialSlide: 0,
+        responsive: [
+            {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2                
+            }
+        }
+    ]             
     });
 });
 
@@ -50,6 +68,15 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: false,
-        initialSlide: 0        
+        initialSlide: 0,
+        responsive: [
+            {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1                
+            }
+        }
+    ]            
     });
 });
