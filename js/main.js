@@ -36,6 +36,13 @@ $(document).ready(function(){
                 slidesToShow: 2,
                 slidesToScroll: 2                
             }
+        },
+        {
+            breakpoint: 320,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1                
+            }
         }
     ]       
     });
@@ -56,6 +63,13 @@ $(document).ready(function(){
                 slidesToShow: 2,
                 slidesToScroll: 2                
             }
+        },
+        {
+            breakpoint: 320,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1                
+            }
         }
     ]             
     });
@@ -72,6 +86,13 @@ $(document).ready(function(){
         responsive: [
             {
             breakpoint: 769,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2               
+            }
+        },
+        {
+            breakpoint: 320,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1                
