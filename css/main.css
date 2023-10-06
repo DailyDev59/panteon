@@ -735,19 +735,8 @@ a {
 .questions {
     position: relative;
     height: 600px;
-    background: url(./../images/jpg/questions.jpg)  no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(12, 20, 23, 0.4), rgba(12, 20, 23, 0.4)), url(./../images/jpg/questions.jpg);
     }
-
-.questions:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(12, 20, 23, 0.4);
-}
 
 .questions__item {
     position: absolute;
@@ -755,7 +744,6 @@ a {
     height: 378px;
     top: 111px;
     right: 173px;
-    z-index: 1;
     text-align: center;
 }
 
@@ -931,11 +919,10 @@ a {
     padding-left: 40px;
 }
 
-.footer {
+/* .footer {
     padding: 15px 60px 50px 43px;
     background-color: #000000;
     height: 241px;
-
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -979,4 +966,215 @@ a {
 
 .footer__menu img {
     padding-right: 15px;
+} */
+
+.footer {
+    padding: 15px 60px 50px 43px;
+    background-color: #000000;
+    min-height: 241px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;    
+}
+
+.footer > div {
+    margin: 0 10px;
+    height: auto;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 157.143% */    
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;    
+    padding-bottom: 16px;
+}
+
+.footer__copyright img[alt="Copyright"] {
+    margin-right: 15px; 
+}
+
+.foot-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+
+.foot-1 * {
+    margin: 0 auto;    
+}
+
+.logo-1 {
+    width: 100%;
+    height: auto;
+}
+
+.foot-5 img[alt="Instagram"] {
+    margin-right: 15px;
+}
+
+.footer a :hover {
+    color: #F7931E;
+    transition: .1s linear;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 147, 30, 0.7);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .8s ease 0s;
+}
+
+.popup__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup:target .popup__content {
+    transform: perspective(600px) translate(0, 0) rotateX(0);
+    opacity: 1;
+}
+
+.popup__body {
+    position: relative;
+    margin: 200px auto 0;
+    max-width: 900px;
+    min-height: 539px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    
+}
+
+.popup__content {
+    position: absolute;
+    padding: 50px 50px 110px;    
+    width: 100%;
+    height: auto;    
+    background-color: #0C1417;
+    transition: all .8s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+}
+
+.popup__logo-close {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.popup__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup__title h2 {    
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; /* 113.333% */ 
+    margin-left: 30px;    
+}
+
+.popup__content h4 {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; /* 170% */
+    margin-top: 30px;
+    margin-bottom: 30px;   
+}
+
+.popup__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    padding-left: 93px;
+    padding-right: 77px;
+}
+
+.popup__text p, .subscr {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */    
+}
+
+.subscr {    
+    margin: 15px auto;
+    
+}
+
+.popup__text img[alt="Popup-loc"], .popup__text img[alt="Popup-clock"] {
+    margin-right: 16px;
+}
+
+.popup__text img[alt="Popup-clock"] {
+    margin-left: 25px;
+}
+
+.popup__address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__hours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__nets {
+    text-align: center;    
+}
+
+.popup__nets img[alt="Popup-Insta"] {
+    margin-right: 15px;
+}
+
+.popup_transp {
+    position: absolute;
+    bottom: 162px;
+    left: 0;
+    z-index: 1;
+}
+
+.popup_solid {
+    position: absolute;
+    bottom: 124px;
+    left: 0;    
 }

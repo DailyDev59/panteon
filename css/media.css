@@ -9,6 +9,57 @@
         margin-bottom: 30px;
     }
 }
+
+@media scren and (max-width: 940px) {
+    .popup__content {
+        padding: 50px 0 110px 0;
+    }
+}
+
+@media screen and (max-width: 931px) {
+    .popup__body  {
+        width: calc(100% - 30px);
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .popup__content {
+        padding: 50px 30px 113px;
+    }
+
+    .popup__text {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .popup__title h2 {
+        margin-left: 15px;
+    }
+
+    .popup__text img[alt="Popup-loc"], .popup__text img[alt="Popup-clock"] {
+        margin-right: 5px;
+    }
+    
+    .popup__text img[alt="Popup-clock"] {
+        margin-left: 12px;
+    }
+
+    .popup__text p, .subscr {
+        font-size: 14px;
+    }
+
+    .popup_solid {
+        bottom: 8px;
+    }
+
+    .popup_transp {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        z-index: 1;
+    }
+}
+
 @media screen and (max-width: 769px) {
     .intro__header {
         padding: 0;
@@ -614,14 +665,16 @@
         justify-content: space-between;
     }
 
+    .footer__menu a {
+        padding-bottom: 15px;
+    }
+
     .footer__menu.open-menu {
         right: 0;
         background: #000;
     }    
 
-    .footer__menu a {
-        padding-bottom: 15px;
-    }
+    
     .footer__rights {
         display: flex;
         flex-direction: column;
@@ -857,5 +910,53 @@
         transition: .1s linear;
     }
 
+    .popup__content {
+        padding: 10px 10px 30px;
+    }
+
+    .popup__title h2 {
+        width: 203px;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    .popup__address p {
+        width: 240px;
+        font-size: 14px;
+    }
+
+    .popup__text p, .subscr {
+        font-style: normal;
+        font-weight: 200;
+        line-height: 24px;
+        letter-spacing: 0;
+    }
+
+    .popup__text img[alt="Popup-clock"] {
+        margin-left: .4px;
+        margin-top: 10px;
+    }
+
+    .popup__text img[alt="Popup-loc"], .popup__text img[alt="Popup-clock"] {
+        margin-right: 6px;
+    }
+
+    .popup__address {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .popup_solid {
+        bottom: 0;
+        width: 30%;
+    }
+
+    .popup_transp {
+        bottom: 0;
+        width: 20%;
+        left: 5px;
+    }
 }
 

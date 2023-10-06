@@ -32,8 +32,10 @@
     </div>
     <div class="advice">
         <img class="transparent" src="./images/svg/advice_transparent.svg" alt="Advice-transp">
-        <p class="advice-text">Получить консультацию</p>
-        <a href="#">
+        <a href="#questions">
+            <p class="advice-text">Получить консультацию</p>
+        </a>
+        <a href="#questions">
             <div class="solid-text">
                 <img class="solid" src="./images/svg/advice_solid.svg" alt="Advice-solid">
             </div>
@@ -309,14 +311,14 @@
             </div>
     </div>    
     <!-- <img src="./images/svg/coach_elem.svg" alt="Coach-elements" class="coach-elements"> -->
-    <div class="questions">
+    <div class="questions" id="questions">
         <div class="questions__item">
             <h5 class="questions_title">Остались вопросы?</h5>
             <p class="questions_text">Оставьте Ваш номер телефона
                 и мы <span id="text-color">обязательно с Вами свяжемся</span></p>
             <input type="text" class="name" placeholder="Введите имя">
             <input type="text" class="phone_number" placeholder="Введите телефон">
-            <a href="#">
+            <a href="#popup">
                 <div>
                     <div class="transparent-text">
                         <img class="transparent" src="./images/svg/advice_transparent.svg" alt="Advice-transparent">
@@ -361,25 +363,54 @@
             </div>        
     </div>
 </div>
-<footer class="footer" id="contacts">
-    <a href="#"><img class="logo-1" src="./images/svg/logo.svg" alt="Panteon-1"></a>
-    <div class="footer__rights">        
+<footer class="footer">
+    <div class="foot-1">
+        <a href="#"><img class="logo-1" src="./images/svg/logo.svg" alt="Panteon-1"></a>
         <div class="footer__copyright">
             <img src="./images/svg/copyright.svg" alt="Copyright">
             <p>Все права защищены</p>
         </div>
         <p>Орехово-Зуево, 2013-2022</p>
     </div>
-    <nav class="footer__menu">        
-        <a href="#coaches">Тренеры</a>
-        <a href="#new">О нас</a>
-        <a href="#contacts">Контакты</a>        
-        <a href="#gallery">Галерея</a>
-        <a href="#">+7 (496) 416-19-16</a>
-        <a href="#subscription">Абонементы</a>
+    <div class="foot-2">
+        <a href="#new"><p>О нас</p></a>
+        <a href="#gallery"><p>Галерея</p></a>
+        <a href="#subscription"><p>Абонементы</p></a>
+    </div>
+    <div class="foot-3">
+        <a href="#coaches"><p>Тренеры</p></a>
+        <a href="#contacts"><p>Контакты</p></a>        
+    </div>
+    <div class="foot-4">
+        <a href="#subscription"><p>Абонементы</p></a>
+        <a href="#subscription"><p>Абонемент по времени</p></a>
+        <a href="#subscription"><p>Разовые тренировки</p></a>
+    </div>
+    <div class="foot-5">
+        <div id="nets">
+            <p>Наши соц. сети</p>
+            <div>
+                <a href="#!"><img id="insta" src="./images/svg/footer_instagram.svg" alt="Instagram"></a>
+                <a href="#!"><img id="vk" src="./images/svg/footer_vk.svg" alt="VK"></a>
+            </div>
+        </div>
+    </div>
+    <div class="foot-6">
+        <p>г. Орехово-Зуево, ул. Ленина, 84</p>
+        <p>Ежедневно с 8:00 до 23:00</p>
+        <p>+7 (496) 416-19-16, +7 (925) 881-21-70</p>
+        <p>Политика конфиденциальности</p>
+    </div>
+    <!-- <nav class="footer__menu">        
+        <a href="#coaches"><p>Тренеры</p></a>
+        <a href="#new"><p>О нас</p></a>
+        <a href="#contacts"><p>Контакты</p></a>        
+        <a href="#gallery"><p>Галерея</p></a>
+        <a href="#"><p>+7 (496) 416-19-16</p></a>
+        <a href="#subscription"><p>Абонементы</p></a>
         <div class="menu_add">
-            <a href="#subscription"><span>Абонемент по времени</span><br></a>
-            <a href="#subscription">Разовые тренировки</a>
+            <a href="#subscription"><span><p>Абонемент по времени</p></span><br></a>
+            <a href="#subscription"><p>Разовые тренировки</p></a>
         </div>
         <div id="nets">
             <p>Наши соц. сети</p>
@@ -397,8 +428,41 @@
     </div>
     <div class="footer_burger">
         <span></span>
-    </div>
+    </div> -->
 </footer>
+<div class="popup" id="popup">
+    <a href="#questions" class="popup__area"></a>
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__logo-close">
+                <img src="./images/svg/popup-logo.svg" alt="Popup-Logo">                
+                <a href="#questions"><img src="./images/svg/popup-close.svg" alt="Popup-close"></a>
+            </div>
+            <div class="popup__title">
+                <img src="./images/svg/check.svg" alt="Popup-check">
+                <h2>Данные успешно отправлены</h2>                
+            </div>
+            <h4>Мы свяжемся с вами в ближайшее время</h4>
+            <div class="popup__text">
+                <div class="popup__address">
+                    <img src="./images/svg/popup-loc.svg" alt="Popup-loc">
+                    <p>г. Орехово-Зуево, ул. Ленина 84</p>
+                </div>
+                <div class="popup__hours">
+                    <img src="./images/svg/popup-clock.svg" alt="Popup-clock">
+                    <p>Ежедневно с 8:00 до 23:00</p>
+                </div>
+                <div class="subscr">Подписывайтесь на наши соц.сети</div>                
+            </div>
+            <div class="popup__nets">
+                <img src="./images/svg/popup-insta.svg" alt="Popup-Insta">
+                <img src="./images/svg/popup-vk.svg" alt="Popup-VK">
+            </div>
+            <img class="popup_transp" src="./images/svg/gal_transp.svg" alt="Popup_transp">
+            <img class="popup_solid" src="./images/svg/gal_solid.svg" alt="Popup_transp">
+        </div>
+    </div>
+</div>
 <script src="./js/jquery-3.6.4.min.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/slick.min.js"></script>
